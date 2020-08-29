@@ -5,7 +5,7 @@ import requests
 import time
 
 message_obj_list = []
-link=r""
+link=r""http://offensivedetectormodel-env.eba-saifiyvj.us-east-1.elasticbeanstalk.com/predict
 
 def home(request):
     if request.method == "POST":
