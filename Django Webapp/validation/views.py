@@ -13,7 +13,7 @@ def home(request):
         email = request.POST["email"]
         message = request.POST["message"]
         r=requests.get(f"{link}/{message}")
-        offensive=r.json()[isOffensive]
+        offensive=r.json()["isOffensive"]
         if not offensive:
             message_obj = {"name": name, "email": email, "message": message}
             message_obj_list.append(message_obj)
